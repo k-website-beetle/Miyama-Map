@@ -1,5 +1,6 @@
-<!doctype html><html lang="ja"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
 <title>ミヤマクワガタ採集マップ</title>
 <style>
 body{font-family:system-ui;background:#eef5ea;max-width:1200px;margin:auto;padding:18px}
@@ -9,17 +10,16 @@ input{padding:10px;width:100%;margin:12px 0}
 .note{background:#fff8dc;padding:12px;border-radius:8px}
 </style></head><body>
 <h1>🪲 多摩センター周辺 ミヤマクワガタ採集マップ</h1>
-<p>検索 <input id=q placeholder="場所・樹種など"></p>
-<table id=t><thead><tr>
+<p>検索 <input id="q" placeholder="場所・樹種など"/></p>
+<table id="t"><thead><tr>
 <th>場所</th><th>期待度</th><th>標高</th><th>車</th><th>時間帯</th><th>シーズン</th><th>樹種</th><th>駐車場</th><th>備考</th><th>地図</th><th>採集</th>
-</tr></thead><tbody><tr><td>高尾山 小仏周辺</td><td>★★★★★</td><td>500-700m</td><td>約35分</td><td>20:30-23:00</td><td>6月下旬～7月下旬</td><td>ミズナラ・コナラ</td><td>高尾山薬王院祈祷殿駐車場</td><td>無料/有料あり・トイレ有</td><td><a target="_blank" href="https://maps.google.com/?q=高尾山薬王院祈祷殿駐車場">地図</a></td><td><button onclick="logSite('高尾山 小仏周辺')">記録</button></td></tr>
-<tr><td>八王子城跡</td><td>★★★★☆</td><td>350-500m</td><td>約40分</td><td>20:00-22:30</td><td>7月</td><td>コナラ</td><td>八王子城跡駐車場</td><td>無料・トイレ有</td><td><a target="_blank" href="https://maps.google.com/?q=八王子城跡駐車場">地図</a></td><td><button onclick="logSite('八王子城跡')">記録</button></td></tr>
-<tr><td>陣馬山 和田峠</td><td>★★★★★</td><td>700-900m</td><td>約55分</td><td>21:00-24:00</td><td>7月</td><td>ミズナラ</td><td>和田峠駐車スペース</td><td>台数少</td><td><a target="_blank" href="https://maps.google.com/?q=和田峠">地図</a></td><td><button onclick="logSite('陣馬山 和田峠')">記録</button></td></tr>
-<tr><td>秋川渓谷 上流</td><td>★★★★★</td><td>300-600m</td><td>約60分</td><td>20:30-23:00</td><td>7月</td><td>クヌギ・コナラ</td><td>十里木駐車場</td><td>トイレ有</td><td><a target="_blank" href="https://maps.google.com/?q=十里木駐車場">地図</a></td><td><button onclick="logSite('秋川渓谷 上流')">記録</button></td></tr>
-<tr><td>奥多摩湖</td><td>★★★★★</td><td>500-800m</td><td>約90分</td><td>21:00-1:00</td><td>7月</td><td>ミズナラ</td><td>奥多摩湖駐車場</td><td>24時間利用可</td><td><a target="_blank" href="https://maps.google.com/?q=奥多摩湖駐車場">地図</a></td><td><button onclick="logSite('奥多摩湖')">記録</button></td></tr>
-<tr><td>檜原村</td><td>★★★★★</td><td>600-900m</td><td>約80分</td><td>20:30-24:00</td><td>7月</td><td>ミズナラ</td><td>払沢の滝駐車場</td><td>トイレ有</td><td><a target="_blank" href="https://maps.google.com/?q=払沢の滝駐車場">地図</a></td><td><button onclick="logSite('檜原村')">記録</button></td></tr>
+<th>🍔 ランチTOP3</th><th>⭐ レビュー</th></tr></thead><tbody><tr><td>高尾山 小仏周辺</td><td>★★★★★</td><td>500-700m</td><td>約35分</td><td>20:30-23:00</td><td>6月下旬～7月下旬</td><td>ミズナラ・コナラ</td><td>高尾山薬王院祈祷殿駐車場</td><td>無料/有料あり・トイレ有</td><td><a href="https://maps.google.com/?q=高尾山薬王院祈祷殿駐車場" target="_blank">地図</a></td><td><button onclick="logSite('高尾山 小仏周辺')">記録</button></td><td><ol><li>高橋家</li><li>TAKAO 599 CAFE</li><li>うかい鳥山</li></ol></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=高橋家+高尾山" target="_blank">高橋家</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=TAKAO+599+CAFE" target="_blank">TAKAO 599 CAFE</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=うかい鳥山" target="_blank">うかい鳥山</a><br/></td></tr>
+<tr><td>八王子城跡</td><td>★★★★☆</td><td>350-500m</td><td>約40分</td><td>20:00-22:30</td><td>7月</td><td>コナラ</td><td>八王子城跡駐車場</td><td>無料・トイレ有</td><td><a href="https://maps.google.com/?q=八王子城跡駐車場" target="_blank">地図</a></td><td><button onclick="logSite('八王子城跡')">記録</button></td><td><ol><li>高橋家</li><li>うかい鳥山</li><li>城山茶屋</li></ol></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=高橋家+高尾山" target="_blank">高橋家</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=うかい鳥山" target="_blank">うかい鳥山</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=城山茶屋" target="_blank">城山茶屋</a><br/></td></tr>
+<tr><td>陣馬山 和田峠</td><td>★★★★★</td><td>700-900m</td><td>約55分</td><td>21:00-24:00</td><td>7月</td><td>ミズナラ</td><td>和田峠駐車スペース</td><td>台数少</td><td><a href="https://maps.google.com/?q=和田峠" target="_blank">地図</a></td><td><button onclick="logSite('陣馬山 和田峠')">記録</button></td><td><ol><li>陣馬そば山下屋</li><li>夕やけ小やけふれあいの里</li><li>うかい鳥山</li></ol></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=陣馬そば山下屋" target="_blank">陣馬そば山下屋</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=夕やけ小やけふれあいの里" target="_blank">夕やけ小やけふれあいの里</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=うかい鳥山" target="_blank">うかい鳥山</a><br/></td></tr>
+<tr><td>秋川渓谷 上流</td><td>★★★★★</td><td>300-600m</td><td>約60分</td><td>20:30-23:00</td><td>7月</td><td>クヌギ・コナラ</td><td>十里木駐車場</td><td>トイレ有</td><td><a href="https://maps.google.com/?q=十里木駐車場" target="_blank">地図</a></td><td><button onclick="logSite('秋川渓谷 上流')">記録</button></td><td><ol><li>黒茶屋</li><li>燈々庵</li><li>寿庵忠左衛門</li></ol></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=黒茶屋" target="_blank">黒茶屋</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=燈々庵" target="_blank">燈々庵</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=寿庵忠左衛門" target="_blank">寿庵忠左衛門</a><br/></td></tr>
+<tr><td>奥多摩湖</td><td>★★★★★</td><td>500-800m</td><td>約90分</td><td>21:00-1:00</td><td>7月</td><td>ミズナラ</td><td>奥多摩湖駐車場</td><td>24時間利用可</td><td><a href="https://maps.google.com/?q=奥多摩湖駐車場" target="_blank">地図</a></td><td><button onclick="logSite('奥多摩湖')">記録</button></td><td><ol><li>アースガーデン</li><li>のんきや</li><li>丹三郎</li></ol></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=アースガーデン奥多摩" target="_blank">アースガーデン</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=のんきや奥多摩" target="_blank">のんきや</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=丹三郎" target="_blank">丹三郎</a><br/></td></tr>
+<tr><td>檜原村</td><td>★★★★★</td><td>600-900m</td><td>約80分</td><td>20:30-24:00</td><td>7月</td><td>ミズナラ</td><td>払沢の滝駐車場</td><td>トイレ有</td><td><a href="https://maps.google.com/?q=払沢の滝駐車場" target="_blank">地図</a></td><td><button onclick="logSite('檜原村')">記録</button></td><td><ol><li>四季の里</li><li>ひのはら四季の里</li><li>カフェせせらぎ</li></ol></td><td><a href="https://www.google.com/maps/search/?api=1&amp;query=四季の里+檜原村" target="_blank">四季の里</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=ひのはら四季の里" target="_blank">ひのはら四季の里</a><br/><a href="https://www.google.com/maps/search/?api=1&amp;query=檜原村+カフェ" target="_blank">カフェせせらぎ</a><br/></td></tr>
 </tbody></table>
-
 <div class="note">
 <h2>🌙 採集のコツ</h2>
 <ul>
@@ -29,10 +29,8 @@ input{padding:10px;width:100%;margin:12px 0}
 <li>私有地・採集禁止区域には立ち入らず、地域ルールを守ってください。</li>
 </ul>
 </div>
-
 <h2>📷 採集記録</h2>
-<div id=logs></div>
-
+<div id="logs"></div>
 <script>
 const q=document.getElementById('q');
 q.oninput=()=>document.querySelectorAll('#t tbody tr').forEach(r=>r.style.display=r.innerText.toLowerCase().includes(q.value.toLowerCase())?'':'none');
